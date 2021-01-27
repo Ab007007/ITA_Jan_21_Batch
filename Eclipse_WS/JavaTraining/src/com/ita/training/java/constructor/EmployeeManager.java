@@ -1,4 +1,4 @@
-package com.ita.training.java.employee;
+package com.ita.training.java.constructor;
 
 class Employee {
 	String empID;

@@ -4,6 +4,7 @@ class Person {
 	String name;
 	int age;
 	long phoneNum;
+	//static  String country = "India";
 	static final String country = "India";
 }
 
