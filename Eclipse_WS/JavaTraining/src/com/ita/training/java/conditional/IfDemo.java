@@ -1,4 +1,4 @@
-package com.ita.training.java.access.conditional;
+package com.ita.training.java.conditional;
 
 public class IfDemo {
 

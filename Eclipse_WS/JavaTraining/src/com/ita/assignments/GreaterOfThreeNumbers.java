@@ -1,4 +1,4 @@
-package com.ita.training.java.access.assignments;
+package com.ita.assignments;
 
 public class GreaterOfThreeNumbers {
 

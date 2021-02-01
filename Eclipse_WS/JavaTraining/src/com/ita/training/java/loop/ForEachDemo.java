@@ -1,4 +1,4 @@
-package com.ita.training.java.access.loop;
+package com.ita.training.java.loop;
 
 public class ForEachDemo {
 

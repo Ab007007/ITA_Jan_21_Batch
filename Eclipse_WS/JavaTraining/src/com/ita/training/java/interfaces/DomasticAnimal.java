@@ -1,4 +1,4 @@
-package com.ita.training.java.access.interfaces;
+package com.ita.training.java.interfaces;
 
 public interface DomasticAnimal {
 	int maxAge = 30;

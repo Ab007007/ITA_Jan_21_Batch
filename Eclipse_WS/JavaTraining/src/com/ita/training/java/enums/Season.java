@@ -1,4 +1,4 @@
-package com.ita.training.java.access.enums;
+package com.ita.training.java.enums;
 
 public class Season {
 
