@@ -1,4 +1,4 @@
-package com.ita.training.java.access.strings;
+package com.ita.training.java.strings;
 
 public class StringBuilderDemo {
 
