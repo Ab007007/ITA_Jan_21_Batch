@@ -9,12 +9,14 @@ public class Engineer extends Employee
 		
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CloneNotSupportedException {
 		Engineer e = new Engineer();
 		e.name = "AHB";
 		e.emp_id = "emp1234";
 		e.salary = 10010;
 		e.getCompleteInfo(e);
+		
+		//Engineer e1 = (Engineer) e.clone();
 		
 	}
 	
