@@ -1,0 +1,63 @@
+{
+  "id": "bac128fc-f31f-4501-874f-3f0e095966cf",
+  "version": "2.0",
+  "name": "Selenium_IDE_POC",
+  "url": "https://www.selenium.dev",
+  "tests": [{
+    "id": "028b11da-5c94-49f1-8475-028f7c63806e",
+    "name": "NavigationOnApp",
+    "commands": [{
+      "id": "0128c45e-b204-456d-a13f-ccb81ef402ba",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9389fda-6e01-491b-bb06-1a0578f8cd37",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Documentation",
+      "targets": [
+        ["linkText=Documentation", "linkText"],
+        ["css=.nav-item:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Documentation')]", "xpath:link"],
+        ["xpath=//nav[@id='navbar']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/documentation')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Documentation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b249889-ee91-42e9-8514-ef4fe37a0fab",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul:nth-child(2) > li:nth-child(1) > .highlight",
+      "targets": [
+        ["css=ul:nth-child(2) > li:nth-child(1) > .highlight", "css:finder"],
+        ["xpath=(//a[contains(text(),'WebDriver')])[10]", "xpath:link"],
+        ["xpath=//div[@id='body-inner']/ul/li/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.selenium.dev/documentation/en/getting_started/quick/')])[4]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/ul/li/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "061e0cea-ab51-4f58-b6c2-661a7666f653",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-chevron-left",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b31fa9c8-9a3f-4325-b643-dbc176f9c8d1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["028b11da-5c94-49f1-8475-028f7c63806e"]
+  }],
+  "urls": ["https://www.selenium.dev/"],
+  "plugins": []
+}
