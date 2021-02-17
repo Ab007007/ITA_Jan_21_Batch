@@ -11,7 +11,7 @@ public class FormyAppDemo
 	
 	
 	public static void main(String[] args) throws InterruptedException {
-		WebDriver driver = ActitimeUtils.getDriver();
+		WebDriver driver = ActitimeUtils.getDriver("edge");
 		ActitimeUtils.launch("http://formy-project.herokuapp.com/form");
 		
 		driver.findElement(By.id("first-name")).sendKeys("Aravinda");
