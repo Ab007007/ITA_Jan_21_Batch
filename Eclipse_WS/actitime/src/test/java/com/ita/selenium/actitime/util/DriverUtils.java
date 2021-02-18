@@ -15,6 +15,19 @@ public class DriverUtils {
 
 	public static WebDriver driver = null;
 
+	
+	public static void sleep(long ms)
+	{
+		System.out.println("--Execution PAUSED for " + ms + " ms");
+		try 
+		{
+			Thread.sleep(ms);
+		} 
+		catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	public static WebDriver getDriver() {
 		System.out.println("--- Creating WebDriver Object ---");
 		System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
@@ -31,21 +44,23 @@ public class DriverUtils {
 			case "chrome":
 					WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
+					driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				break;
 			case "ff":
 					WebDriverManager.firefoxdriver().setup();
 					driver = new FirefoxDriver();
+					driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				break;
 			case "edge":
 					WebDriverManager.edgedriver().setup();
 					driver = new EdgeDriver();
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				break;
 	
 			default:
 				System.out.println("Contact framework develooper for the browser type - " + type);
 				break;
 		}
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		return driver;
 	}
