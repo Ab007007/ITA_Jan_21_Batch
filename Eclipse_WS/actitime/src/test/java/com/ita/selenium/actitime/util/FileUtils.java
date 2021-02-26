@@ -25,7 +25,11 @@ public class FileUtils {
 	static Row row = null;
 	static Cell cell = null;
 			
-	
+	/**
+	 * @author Aravind
+	 * @param pn - browser, username, password, timeout, url
+	 * @return - value corresponding to the property
+	 */
  	public static String getPropertyValue(String pn)
 	{
 		String value = null;
