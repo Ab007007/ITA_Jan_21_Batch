@@ -1,0 +1,5 @@
+WinWaitActive("Open")
+Sleep(2000)
+ControlSetText("Open","","Edit1","D:\ITA\ITAutomation_Jan_21_Batch\Registration.html")
+Sleep(2000)
+ControlClick("Open","&Open","Button1")

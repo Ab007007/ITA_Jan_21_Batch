@@ -19,6 +19,7 @@ public class BrowserOperationDemo {
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 		driver.close();
+		System.out.println(driver.getCurrentUrl());
 //		driver.quit();
 		
 	}
