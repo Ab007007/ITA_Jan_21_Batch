@@ -1,0 +1,14 @@
+name: ITAutomation Test Runner 
+configFailurePolicy: skip
+parameters: { password: manager, browser: ff, url: http://localhost/login.do, username: admin }
+tests:
+  - name: Login MODULE
+    verbose: 2
+    classes:
+      - com.ita.testng.test.LoginTest
+
+  - name: AutoSuggestions MODULE
+    verbose: 2
+    classes:
+      - com.ita.testng.test.AutoSuggestions
+

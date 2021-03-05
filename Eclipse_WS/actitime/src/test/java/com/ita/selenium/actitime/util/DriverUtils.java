@@ -1,8 +1,14 @@
 package com.ita.selenium.actitime.util;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -143,5 +149,67 @@ public class DriverUtils {
 		System.out.println("text found - " + txt);
 		return txt;
 	}
+	
+	
+	public static String getCurrentDate()
+	{
+		return (new Date().toString().replace(" ", "_").replace(":", "_"));
+	}
 
+	
+	
+	public static void getScreenShot() throws IOException
+	{
+		TakesScreenshot ss = (TakesScreenshot) driver;
+		File screenShot = ss.getScreenshotAs(OutputType.FILE);
+		
+		FileUtils.copyFile(screenShot, new File("reports/screenShot_"+ getCurrentDate() + ".png"));
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

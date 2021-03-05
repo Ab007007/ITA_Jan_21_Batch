@@ -3,6 +3,7 @@ package com.ita.selenium.actitime.util;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class ActitimeUtils extends DriverUtils {
 
@@ -10,7 +11,7 @@ public class ActitimeUtils extends DriverUtils {
 		System.out.println("--- Launching Application " + url);
 		driver.get(url);
 		
-
+		Assert.assertEquals(driver.getTitle(), "actiTIME - Login");
 	}
 
 	/**
@@ -18,6 +19,7 @@ public class ActitimeUtils extends DriverUtils {
 	 */
 	public static void logout() {
 		ActitimeUtils.click("id", "logoutLink");
+		Assert.assertEquals(driver.getTitle(), "actiTIME - Login");
 		driver.close();
 	}
 
@@ -55,6 +57,7 @@ public class ActitimeUtils extends DriverUtils {
 	 */
 	public static void clickOnTasks() {
 		ActitimeUtils.click("xpath", "//div[text()='TASKS']/parent::a");
+		Assert.assertEquals(driver.getTitle(), "actiTIME - Task List");
 	}
 
 	/**
@@ -65,6 +68,7 @@ public class ActitimeUtils extends DriverUtils {
 		ActitimeUtils.type("name", "pwd", pwd);
 		ActitimeUtils.click("id", "loginButton");
 		ActitimeUtils.sleep(5000);
+		Assert.assertEquals(driver.getTitle(), "actiTIME - Enter Time-Track");
 	}
 	
 	/**

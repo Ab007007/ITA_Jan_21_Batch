@@ -19,12 +19,9 @@ public class ActitimeTestData
 	  @DataProvider
 	  public Object[][] createcustomer() {
 	    return new Object[][] {
-	      new Object[] {"ITA-TestNG-Custo-1","ITA-TestNG-Custo-1" },
-	      new Object[] {"ITA-TestNG-Custo-2","ITA-TestNG-Custo-2" },
-	      new Object[] {"ITA-TestNG-Custo-3","ITA-TestNG-Custo-3" },
-	      new Object[] {"ITA-TestNG-Custo-4","ITA-TestNG-Custo-4" },
-	      new Object[] {"ITA-TestNG-Custo-5","ITA-TestNG-Custo-5" },
-	      new Object[] {"ITA-TestNG-Custo-6","ITA-TestNG-Custo-6" }
+	      new Object[] {"ITA-TestNG-Custo-7","ITA-TestNG-Custo-1" },
+	      new Object[] {"ITA-TestNG-Custo-8","ITA-TestNG-Custo-2" },
+	      new Object[] {"ITA-TestNG-Custo-9","ITA-TestNG-Custo-6" }
 	    };
 	  }
 	  

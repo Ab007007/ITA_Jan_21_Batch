@@ -10,4 +10,9 @@
 			<class name="com.ita.testng.test.CreateCustomerUsingTestNG" />
 		</classes>
 	</test> <!-- Default test -->
+	<test thread-count="5" verbose="2" name="TASK MODULE">
+		<classes>
+			<class name="com.ita.testng.test.CreateCustomerUsingTestNG" />
+		</classes>
+	</test> <!-- Default test -->
 </suite> <!-- Default suite -->
