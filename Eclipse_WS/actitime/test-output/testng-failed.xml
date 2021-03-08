@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ita.testng.test.POMTest">
+      <class name="com.ita.testng.test.LoginTest">
         <methods>
+          <include name="checkStatus"/>
           <include name="setup"/>
-          <include name="createCustomer"/>
-          <include name="closeResources"/>
+          <include name="cleanup"/>
           <include name="validLogin"/>
-          <include name="launch"/>
+          <include name="invalidLogin"/>
         </methods>
-      </class> <!-- com.ita.testng.test.POMTest -->
+      </class> <!-- com.ita.testng.test.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
